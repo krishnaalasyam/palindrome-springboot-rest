@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<!--/*/ <th:block th:include="fragments/menu :: menu"></th:block> /*/-->
+<div class="container">
+    <div class="jumbotron">
+        <h1>Torre.co: The Palindrome Challenge</h1>
+        <p class="lead">
+            Implements the code challenge for Torre.co
+        </p>
+        <p>Use document named 'BackEndTechTest_2016.docx' from documentation (located in this repository in the docs
+            folder).
+            specification.</p>
+        <p>See file 'big-o-complexity-analysis.adoc' for algorithm complexity</p>
+        <p>Use the following end points to test REST API</p>
+        <p><b>http://localhost:8092/api/v1/palindrome/numbers/range/{start}/{end}</b>
+
+            here replace {start} with an initial number in range from 1 to 1000000
+            and replace [end] with the final number in range with a value from 1 to 1000000.
+        </p>
+        <p>The other available end point is:
+
+            <b>http://localhost:8092/api/v1/palindrome/numbers/range</b>
+
+            It evaluates implicitely the range 1 to 1000000.
+
+            The end points responds a JSON object indicating the parameters used, the palindromes found,
+            the number of palindromes found and the algorithm complexity.</p>
+    </div>
+</div>
+<!-- /.container -->
+</body>
+</html>
